@@ -1,0 +1,41 @@
+Input:
+user_id			business_id		stars
+vxR_YV0atFxIxfOnF9uHjQ	gTw6PENNGl68ZPUpYWP50A	5
+
+1-Turning the above into a 0-1 matrix?
+
+Q: how do i best represent this matrix?
+
+
+2- minhash to sig matrix(Dims # of business to # of hash functions) => b x r(# of hash functions) = #minhash functions to create signatures = # signatures in the first place.
+Q: Do we use the suggested hash functions? A:YES
+Q: DO WE NEED all those zeros?
+Q: since we have strings, should we hash the strings insread of the int example?
+
+
+
+3- find b & r. b=#buckets=#hash functions?
+
+Q:What is the best way to find b&r? probabilities? A:(1/b)^(1/r)=similarity threshold 0.502
+
+five rows of one business and 5 rows of another business
+hash() => int 
+100 x 10
+bucket size 5 rows
+(it depends on the hash functions.)=> bxr=n
+Since threshold 50% our b and r should be the same number?
+higher is generally better since closer to step functon. but how high do we go?
+
+
+4- Use Python hash function to get ints then divide matrix and hash each b to a bucket.
+Q: 
+is the bucket a hashable? 
+what should the keys be? 
+results of the hash function?
+
+
+Q: Is there a set answer we need to get to? otherwise, submission fail?
+
+Q: Can we use the hashfamily in the stack overflow post.
+
+Q: Can we have .py files other than the task1.py, etc.
